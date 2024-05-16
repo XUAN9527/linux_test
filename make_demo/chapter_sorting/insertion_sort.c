@@ -1,4 +1,10 @@
-#include "../include/sort.h"
+/**
+ * File: insertion_sort.c
+ * Created Time: 2022-12-29
+ * Author: Listening (https://github.com/L-Super)
+ */
+
+#include "../utils/common.h"
 
 /* 插入排序 */
 void insertionSort(int nums[], int size) {
@@ -16,3 +22,15 @@ void insertionSort(int nums[], int size) {
     }
 }
 
+/* Driver Code */
+// int main() {
+//     int nums[] = {4, 1, 3, 1, 5, 2};
+//     insertionSort(nums, 6);
+//     printf("插入排序完成后 nums = ");
+//     for (int i = 0; i < 6; i++) {
+//         printf("%d ", nums[i]);
+//     }
+//     printf("\n");
+
+//     return 0;
+// }

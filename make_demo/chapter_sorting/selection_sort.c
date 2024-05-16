@@ -1,4 +1,10 @@
-#include "../include/sort.h"
+/**
+ * File: selection_sort.c
+ * Created Time: 2023-05-31
+ * Author: Gonglja (glj0@outlook.com)
+ */
+
+#include "../utils/common.h"
 
 /* 选择排序 */
 void selectionSort(int nums[], int n) {
@@ -17,3 +23,15 @@ void selectionSort(int nums[], int n) {
     }
 }
 
+/* Driver Code */
+// int main() {
+//     int nums[] = {4, 1, 3, 1, 5, 2};
+//     int n = sizeof(nums) / sizeof(nums[0]);
+
+//     selectionSort(nums, n);
+
+//     printf("选择排序完成后 nums = ");
+//     printArray(nums, n);
+
+//     return 0;
+// }

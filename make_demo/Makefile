@@ -1,25 +1,28 @@
+OBJ_NAME = edit
 BUILD_DIR = build
+COMPILE_FLAGS = -MMD
 
-INCLUDE = -Iinclude
+INCLUDE = -Iapplication \
+-Iutils
 
-C_SOURCES = main.c \
-sort/insert.c \
-sort/select.c
+C_SOURCES = application/main.c \
+utils/common.c \
+$(wildcard chapter_sorting/*.c)
 
 C_OBJECTS = $(addprefix $(BUILD_DIR)/, $(C_SOURCES:.c=.o))
 
 $(BUILD_DIR)/%.o: %.c
 	mkdir -p $(dir $@)
-	cc -c $(INCLUDE) $< -o $@
+	cc -c $(COMPILE_FLAGS) $(INCLUDE) $< -o $@
 
 .PHONY : clean all
 
-all : $(BUILD_DIR)/edit
+all : $(OBJ_NAME)
 
-$(BUILD_DIR)/edit: $(C_OBJECTS)
+$(OBJ_NAME): $(C_OBJECTS)
 	cc -o $@ $(C_OBJECTS)
 
 clean :
-	rm -rf build
+	rm -rf build $(OBJ_NAME)
 
 -include $(wildcard $(BUILD_DIR)/**/*.d)	# 包含所有生成的依赖文件，避免重复编译、提高效率
