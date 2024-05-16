@@ -5,7 +5,7 @@
 void va_test(int count, ...) {
     va_list args;
     va_start(args, count);
-	printf("\nva test count = [%d]\nva_param:\n", count);
+	printf("va test count = [%d]\nva_param: ", count);
     for (int i = 0; i < count; i++) {
         int value = va_arg(args, int);
         printf("%d ", value);			//deal with code
@@ -36,20 +36,21 @@ void testTreeNode() {
 
 int main(int argc, char *argv[]) 
 {
-    printf("==testListNode==\n");
-    testListNode();
-    printf("==testTreeNode==\n");
-    testTreeNode();
+    va_test(5, 4, 1, 3, 9, 13);
+
+    // printf("==testListNode==\n");
+    // testListNode();
+    // printf("==testTreeNode==\n");
+    // testTreeNode();
 
     int nums[] = {4, 1, 3, 1, 5, 2};
     insertionSort(nums, 6);
-    printf("插入排序完成后 nums = ");
+    printf("\n插入排序完成后 nums = ");
     for (int i = 0; i < 6; i++) {
         printf("%d ", nums[i]);
     }
     printf("\n");
 
-    va_test(5, 4, 1, 3, 9, 13);
 
     return 0;
 }
