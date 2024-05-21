@@ -46,6 +46,18 @@ void radixSort(int nums[], int size);
 
 void selectionSort(int nums[], int n);
 
+//test sort
+int bubble_Sort_test(void);
+int bucketSort_test(void);
+int countingSort_test(void);
+int heapSort_test(void);
+int insertionSort_test(void);
+int mergeSort_test(void);
+int quickSort_test(void);
+int radixSort_test(void);
+int selectionSort_test(void);
+
+void List_Node_test(void);
 
 #ifdef __cplusplus
 extern "C" {

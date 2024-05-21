@@ -69,18 +69,18 @@ void countingSort(int nums[], int size) {
 }
 
 /* Driver Code */
-// int main() {
-//     int nums[] = {1, 0, 1, 2, 0, 4, 0, 2, 2, 4};
-//     int size = sizeof(nums) / sizeof(int);
-//     countingSortNaive(nums, size);
-//     printf("计数排序（无法排序对象）完成后 nums = ");
-//     printArray(nums, size);
+int countingSort_test(void) {
+    int nums[] = {1, 0, 1, 2, 0, 4, 0, 2, 2, 4};
+    int size = sizeof(nums) / sizeof(int);
+    countingSortNaive(nums, size);
+    printf("计数排序（无法排序对象）完成后 nums = ");
+    printArray(nums, size);
 
-//     int nums1[] = {1, 0, 1, 2, 0, 4, 0, 2, 2, 4};
-//     int size1 = sizeof(nums1) / sizeof(int);
-//     countingSort(nums1, size1);
-//     printf("计数排序完成后 nums1 = ");
-//     printArray(nums1, size1);
+    int nums1[] = {1, 0, 1, 2, 0, 4, 0, 2, 2, 4};
+    int size1 = sizeof(nums1) / sizeof(int);
+    countingSort(nums1, size1);
+    printf("计数排序完成后 nums1 = ");
+    printArray(nums1, size1);
 
-//     return 0;
-// }
+    return 0;
+}

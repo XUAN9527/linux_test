@@ -113,25 +113,25 @@ void quickSortTailCall(int nums[], int left, int right) {
 }
 
 /* Driver Code */
-// int main() {
-//     /* 快速排序 */
-//     int nums[] = {2, 4, 1, 0, 3, 5};
-//     int size = sizeof(nums) / sizeof(int);
-//     quickSort(nums, 0, size - 1);
-//     printf("快速排序完成后 nums = ");
-//     printArray(nums, size);
+int quickSort_test(void) {
+    /* 快速排序 */
+    int nums[] = {2, 4, 1, 0, 3, 5};
+    int size = sizeof(nums) / sizeof(int);
+    quickSort(nums, 0, size - 1);
+    printf("快速排序完成后 nums = ");
+    printArray(nums, size);
 
-//     /* 快速排序（中位基准数优化） */
-//     int nums1[] = {2, 4, 1, 0, 3, 5};
-//     quickSortMedian(nums1, 0, size - 1);
-//     printf("快速排序（中位基准数优化）完成后 nums = ");
-//     printArray(nums1, size);
+    /* 快速排序（中位基准数优化） */
+    int nums1[] = {2, 4, 1, 0, 3, 5};
+    quickSortMedian(nums1, 0, size - 1);
+    printf("快速排序（中位基准数优化）完成后 nums = ");
+    printArray(nums1, size);
 
-//     /* 快速排序（尾递归优化） */
-//     int nums2[] = {2, 4, 1, 0, 3, 5};
-//     quickSortTailCall(nums2, 0, size - 1);
-//     printf("快速排序（尾递归优化）完成后 nums = ");
-//     printArray(nums1, size);
+    /* 快速排序（尾递归优化） */
+    int nums2[] = {2, 4, 1, 0, 3, 5};
+    quickSortTailCall(nums2, 0, size - 1);
+    printf("快速排序（尾递归优化）完成后 nums = ");
+    printArray(nums1, size);
 
-//     return 0;
-// }
+    return 0;
+}

@@ -41,21 +41,21 @@ void bubbleSortWithFlag(int nums[], int size) {
 }
 
 /* Driver Code */
-// int main() {
-//     int nums[6] = {4, 1, 3, 1, 5, 2};
-//     printf("冒泡排序后: ");
-//     bubbleSort(nums, 6);
-//     for (int i = 0; i < 6; i++) {
-//         printf("%d ", nums[i]);
-//     }
+int bubble_Sort_test(void) {
+    int nums[6] = {4, 1, 3, 1, 5, 2};
+    printf("冒泡排序后: ");
+    bubbleSort(nums, 6);
+    for (int i = 0; i < 6; i++) {
+        printf("%d ", nums[i]);
+    }
 
-//     int nums1[6] = {4, 1, 3, 1, 5, 2};
-//     printf("\n优化版冒泡排序后: ");
-//     bubbleSortWithFlag(nums1, 6);
-//     for (int i = 0; i < 6; i++) {
-//         printf("%d ", nums1[i]);
-//     }
-//     printf("\n");
+    int nums1[6] = {4, 1, 3, 1, 5, 2};
+    printf("\n优化版冒泡排序后: ");
+    bubbleSortWithFlag(nums1, 6);
+    for (int i = 0; i < 6; i++) {
+        printf("%d ", nums1[i]);
+    }
+    printf("\n");
 
-//     return 0;
-// }
+    return 0;
+}

@@ -44,7 +44,7 @@ void freeMemoryLinkedList(ListNode *cur) {
 /* 打印数组 */
 void printArray(int arr[], int size) {
     if (arr == NULL || size == 0) {
-        printf("[]");
+        printf("\n");
         return;
     }
     printf("[");
@@ -391,7 +391,7 @@ bool vectorEqual(vector *v1, vector *v2) {
     for (int i = 0; i < v1->size; i++) {
         void *a = v1->data[i];
         void *b = v2->data[i];
-        if (memcmp(a, b, sizeof(a)) != 0) {
+        if (memcmp(a, b, sizeof(*a)) != 0) {
             printf("data %d not equal\n", i);
             return false;
         }
@@ -476,4 +476,32 @@ int *vetsToVals(Vertex **vertices, int size) {
         vals[i] = vertices[i]->val;
     }
     return vals;
+}
+
+void testListNode() {
+    int nums[] = {2, 3, 5, 6, 7};
+    int size = sizeof(nums) / sizeof(int);
+    ListNode *head = arrToLinkedList(nums, size);
+    printLinkedList(head);
+}
+
+void testTreeNode() {
+    int nums[] = {1, 2, 3, INT_MAX, 5, 6, INT_MAX};
+    int size = sizeof(nums) / sizeof(int);
+    TreeNode *root = arrayToTree(nums, size);
+
+    // print tree
+    printTree(root);
+
+    // tree to arr
+    int *arr = treeToArray(root, &size);
+    printArray(arr, size);
+}
+
+void List_Node_test(void)
+{
+    printf("==testListNode==\n");
+    testListNode();
+    printf("==testTreeNode==\n");
+    testTreeNode();
 }

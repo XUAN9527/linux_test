@@ -24,14 +24,14 @@ void selectionSort(int nums[], int n) {
 }
 
 /* Driver Code */
-// int main() {
-//     int nums[] = {4, 1, 3, 1, 5, 2};
-//     int n = sizeof(nums) / sizeof(nums[0]);
+int selectionSort_test(void) {
+    int nums[] = {4, 1, 3, 1, 5, 2};
+    int n = sizeof(nums) / sizeof(nums[0]);
 
-//     selectionSort(nums, n);
+    selectionSort(nums, n);
 
-//     printf("选择排序完成后 nums = ");
-//     printArray(nums, n);
+    printf("选择排序完成后 nums = ");
+    printArray(nums, n);
 
-//     return 0;
-// }
+    return 0;
+}

@@ -48,13 +48,13 @@ void heapSort(int nums[], int n) {
 }
 
 /* Driver Code */
-// int main() {
-//     int nums[] = {4, 1, 3, 1, 5, 2};
-//     int n = sizeof(nums) / sizeof(nums[0]);
+int heapSort_test(void) {
+    int nums[] = {4, 1, 3, 1, 5, 2};
+    int n = sizeof(nums) / sizeof(nums[0]);
 
-//     heapSort(nums, n);
-//     printf("堆排序完成后 nums = ");
-//     printArray(nums, n);
+    heapSort(nums, n);
+    printf("堆排序完成后 nums = ");
+    printArray(nums, n);
 
-//     return 0;
-// }
+    return 0;
+}

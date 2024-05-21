@@ -46,12 +46,12 @@ void bucketSort(float nums[], int n) {
 }
 
 /* Driver Code */
-// int main() {
-//     // 设输入数据为浮点数，范围为 [0, 1)
-//     float nums[SIZE] = {0.49f, 0.96f, 0.82f, 0.09f, 0.57f, 0.43f, 0.91f, 0.75f, 0.15f, 0.37f};
-//     bucketSort(nums, SIZE);
-//     printf("桶排序完成后 nums = ");
-//     printArrayFloat(nums, SIZE);
+int bucketSort_test(void) {
+    // 设输入数据为浮点数，范围为 [0, 1)
+    float nums[SIZE] = {0.49f, 0.96f, 0.82f, 0.09f, 0.57f, 0.43f, 0.91f, 0.75f, 0.15f, 0.37f};
+    bucketSort(nums, SIZE);
+    printf("桶排序完成后 nums = ");
+    printArrayFloat(nums, SIZE);
 
-//     return 0;
-// }
+    return 0;
+}

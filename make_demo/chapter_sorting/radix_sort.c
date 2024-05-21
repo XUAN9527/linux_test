@@ -60,12 +60,13 @@ void radixSort(int nums[], int size) {
 }
 
 /* Driver Code */
-// int main() {
-//     // 基数排序
-//     int nums[] = {10546151, 35663510, 42865989, 34862445, 81883077,
-//                   88906420, 72429244, 30524779, 82060337, 63832996};
-//     int size = sizeof(nums) / sizeof(int);
-//     radixSort(nums, size);
-//     printf("基数排序完成后 nums = ");
-//     printArray(nums, size);
-// }
+int radixSort_test(void) {
+    // 基数排序
+    int nums[] = {10546151, 35663510, 42865989, 34862445, 81883077,
+                  88906420, 72429244, 30524779, 82060337, 63832996};
+    int size = sizeof(nums) / sizeof(int);
+    radixSort(nums, size);
+    printf("基数排序完成后 nums = ");
+    printArray(nums, size);
+    return 0;
+}

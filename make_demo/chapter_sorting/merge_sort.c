@@ -51,13 +51,13 @@ void mergeSort(int *nums, int left, int right) {
 }
 
 /* Driver Code */
-// int main() {
-//     /* 归并排序 */
-//     int nums[] = {7, 3, 2, 6, 0, 1, 5, 4};
-//     int size = sizeof(nums) / sizeof(int);
-//     mergeSort(nums, 0, size - 1);
-//     printf("归并排序完成后 nums = ");
-//     printArray(nums, size);
+int mergeSort_test(void) {
+    /* 归并排序 */
+    int nums[] = {7, 3, 2, 6, 0, 1, 5, 4};
+    int size = sizeof(nums) / sizeof(int);
+    mergeSort(nums, 0, size - 1);
+    printf("归并排序完成后 nums = ");
+    printArray(nums, size);
 
-//     return 0;
-// }
+    return 0;
+}
